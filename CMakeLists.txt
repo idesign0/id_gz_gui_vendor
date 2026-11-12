@@ -49,6 +49,8 @@ ament_vendor(${LIB_NAME_UNDERSCORE}_vendor
   SATISFIED ${${LIB_NAME_FULL}_FOUND}
   VCS_URL https://github.com/gazebosim/${GITHUB_NAME}.git
   VCS_VERSION ${GITHUB_NAME}${LIB_VER_MAJOR}_${LIB_VER}${LIB_VER_SUFFIX}
+  PATCHES
+    patches/0001-Fix-compatibility-with-protobuf-v30.patch
   CMAKE_ARGS
     -DBUILD_DOCS:BOOL=OFF
   GLOBAL_HOOK
